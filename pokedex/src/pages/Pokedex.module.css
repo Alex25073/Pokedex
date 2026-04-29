@@ -1,0 +1,116 @@
+.container {
+  padding-bottom: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Bangers', cursive;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-shadow: 3px 3px 0 var(--red), 6px 6px 0 rgba(230, 57, 70, 0.3);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--gray);
+  font-size: 0.95rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.loadingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skeleton {
+  height: 180px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.05) 25%,
+    rgba(255,255,255,0.1) 50%,
+    rgba(255,255,255,0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pageBtn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--red);
+  background: transparent;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: var(--red);
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
+}
+
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--gray);
+}
+
+.pageInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.pageNum {
+  font-family: 'Bangers', cursive;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: var(--yellow);
+}
+
+.pageTotal {
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+.error {
+  background: rgba(230, 57, 70, 0.15);
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}

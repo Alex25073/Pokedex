@@ -1,0 +1,149 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  position: relative;
+}
+
+.pokeballDecor {
+  font-size: 6rem;
+  color: var(--red);
+  opacity: 0.15;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.title {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-shadow: 3px 3px 0 var(--red);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--gray);
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(230, 57, 70, 0.4);
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.features {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.featuresTitle {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: var(--yellow);
+  margin-bottom: 1rem;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.featureList li {
+  font-size: 0.9rem;
+  color: var(--gray);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.featureList li::before {
+  content: '►';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-size: 0.6rem;
+  top: 3px;
+}
+
+.cta {
+  text-align: center;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background: var(--red);
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+}
+
+.ctaBtn:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.4);
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

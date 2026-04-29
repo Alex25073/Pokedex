@@ -1,0 +1,70 @@
+:root {
+  --red: #e63946;
+  --red-dark: #c1121f;
+  --yellow: #ffd60a;
+  --black: #0d0d0d;
+  --dark: #1a1a2e;
+  --darker: #16213e;
+  --card-bg: #0f3460;
+  --white: #f8f9fa;
+  --gray: #adb5bd;
+  --light-gray: #e9ecef;
+
+  /* Type colors */
+  --fire: #FF6B35;
+  --water: #4895EF;
+  --grass: #52B788;
+  --electric: #F7B731;
+  --psychic: #E83E8C;
+  --ice: #74C0FC;
+  --dragon: #6F42C1;
+  --dark-type: #343A40;
+  --fairy: #FF8FAB;
+  --normal: #ADB5BD;
+  --fighting: #D62828;
+  --poison: #9775FA;
+  --ground: #C9A84C;
+  --flying: #74C0FC;
+  --bug: #74B816;
+  --rock: #9D8B70;
+  --ghost: #6741D9;
+  --steel: #868E96;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--dark);
+  color: var(--white);
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(ellipse at 20% 50%, rgba(230, 57, 70, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(72, 149, 239, 0.08) 0%, transparent 50%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 3px;
+}

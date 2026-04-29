@@ -1,0 +1,94 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--red);
+  box-shadow: 0 4px 20px rgba(230, 57, 70, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.pokeball {
+  font-size: 1.4rem;
+  color: var(--red);
+  animation: spin 4s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logoText {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-shadow: 2px 2px 0 var(--red);
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navLink {
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: var(--gray);
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.navLink:hover {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.navLink.active {
+  color: var(--white);
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer a {
+  color: var(--red);
+}
